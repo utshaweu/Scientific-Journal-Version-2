@@ -1,0 +1,779 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+ul,ol{
+  list-style-type: none;
+}
+img{
+  vertical-align: middle;
+  border: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Proza Libre', sans-serif;
+}
+p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.form-check-label{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ===============================================================================================
+                                          Sub Navbar Part Css
+================================================================================================= */
+#sub-navbar{
+  background: #f9f9f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.sub-navbar-title h1{
+  color: #34495e;
+  font-size: 30px;
+  font-weight: 600;
+}
+.sub-navbar-title span{
+  color: #2f3542;
+  font-size: 18px;
+  font-weight: 700;
+}
+.sub-navbar-title p{
+  color: #2c2c54;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ===============================================================================================
+                                            Navbar Part Css
+================================================================================================= */
+.navbar{
+  background: #6c5ce7;
+  padding: 20px 0;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #ffffff;
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all linear .3s;
+  position: relative;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #ffffff;
+}
+.navbar-light .navbar-nav .nav-link::before{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  background: #ffffff;
+  border-radius: 50%;
+  transition: all linear .3s;
+  opacity: 0;
+}
+.navbar-light .navbar-nav .nav-link:hover::before{
+  opacity: 1;
+  bottom: -5px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-light .navbar-nav .nav-link:focus{
+  color: #ffffff;
+}
+.form-inline .form-control{
+  width: 400px;
+  border-radius: 0;
+  border: 0;
+  height: calc(2.9rem + 2px);
+}
+.form-control:focus{
+  box-shadow: none;
+}
+.btn-outline-success.focus, .btn-outline-success:focus {
+  box-shadow: none;
+}
+.mr5{
+  border-radius: 0;
+  border: 1px solid rgba(255,255,255);
+  background: rgba(255,255,255);
+  padding: 11px 18px;
+}
+
+/* =============================================================================================
+                                          Banner Part Css 
+===============================================================================================*/
+#banner{
+  background: url(../images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+#banner::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.1);
+}
+.banner-bg{
+  position: relative;
+  z-index: 9;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner-details h1{
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+.banner-details a{
+  color: #ffffff;
+  border: 2px solid #4CAF50;
+  padding: 12px 18px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #4CAF50;
+  -webkit-box-shadow: 2px 1px 5px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 2px 1px 5px 0px rgba(255,255,255,1);
+  box-shadow: 2px 1px 5px 0px rgba(255,255,255,1);
+}
+/* ==============================================================================================
+                                          About Part Css
+================================================================================================= */
+#about{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.articles{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.articles h6{
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(52, 73, 94,0.8);
+  display: inline;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  color: #34495e;
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background: #f9f9f9;
+}
+.nav-tabs .nav-link{
+  color: #218c74;
+  font-family: 'Proza Libre', sans-serif;
+}
+.article-content{
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dee2e6;
+}
+.article-content a h5{
+  color: #2c2c54;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.article-content p i{
+  color: #218c74;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.article-content p a{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all linear .3s;
+  line-height: 26px;
+}
+.article-content p a:hover{
+  color: #218c74;
+}
+.article-content span{
+  color: #666666;
+}
+.view{
+  margin-top: 10px;
+}
+.view a{
+  color: #555555;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+.view a i{
+  color: #218c74;
+  margin-right: 5px;
+}
+.link{
+  background: #ffffff;
+  padding: 15px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+.link h6{
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(52, 73, 94,0.8);
+  display: inline;
+}
+.link ul li{
+  font-weight: 500;
+  font-size: 16px;
+  transition: all linear .3s;
+  padding-bottom: 5px;
+}
+.link ul li:hover{
+  transform: translateX(5px);
+}
+.link ul li a{
+  color: #218c74;
+}
+.link ul li a i{
+  color: #e58e26;
+  margin-right: 5px;
+}
+.other-journal{
+  background: #ffffff;
+  padding: 15px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+.other-journal h6{
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(52, 73, 94,0.8);
+  display: inline;
+}
+.mr2{
+  margin-top: 20px;
+}
+.ad{
+  background: #ffffff;
+  padding: 90px 0px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.ad h6{
+  font-size: 30px;
+  color: #666666;
+}
+.mr3{
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 25px;
+  line-height: 24px;
+  font-style: italic;
+}
+.research-article span{
+  font-size: 16px;
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+/* ================================================================================================
+                                         Footer Contact Part Css
+=================================================================================================== */
+#footer-contact{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #f5f6fa;
+}
+.get h6{
+  color: #487eb0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.get p{
+  color: #718093;
+  font-weight: 500;
+  margin-right: 70px;
+}
+.get p i{
+  color: #4CAF50;
+  font-size: 16px;
+  margin-right: 8px;
+}
+.get ul li{
+  margin-bottom: 10px;
+}
+.get ul li a{
+  color: #718093;
+  font-size: 16px;
+  font-weight: 500;
+}
+.get ul li a i{
+  color: #4CAF50;
+  font-size: 16px;
+  margin-right: 8px;
+}
+/* =================================================================================================
+                                              Footer Part Css
+==================================================================================================== */
+#footer{
+  background: #6c5ce7;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.footer-content h6{
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* ===============================================================================================
+                                           Back to Top Part Css
+=================================================================================================== */
+.back-to-top{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 9999;
+  display: none;
+}
+.back-to-top i{
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #487eb0;
+  border: 1px solid #487eb0;
+  border-radius: 3px;
+}
+/* ==================================================================================================
+                                          Contact Us Part Css
+===================================================================================================== */
+#contact{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.contact-bg h6{
+  color: #487eb0;
+  font-size: 40px;
+  font-weight: 600;
+}
+.contact-bg p{
+  color: #555555;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+/* ==================================================================================================
+                                           Contact Details Part Css
+===================================================================================================== */
+#contact-details{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.contact-us{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.contact-us h6{
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(52, 73, 94,0.8);
+  display: inline;
+}
+.contact-us p{
+  color: #555555;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+  margin-top: 15px;
+}
+.form label{
+  font-size: 16px;
+  font-weight: 600;
+  color: #e58e26;
+}
+.form .form-control{
+  color: #999999;
+}
+.form .form-control:focus{
+  box-shadow: none;
+  border-color: #999999;
+}
+.form .btn{
+  border-radius: 5px;
+  background: #218c74;
+  border-color: #218c74;
+}
+.address{
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.address h6{
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(52, 73, 94,0.8);
+  display: inline;
+}
+.add-details{
+  margin-left: 20px;
+}
+.add-details p{
+  color: #444444;
+  font-size: 16px;
+}
+.add-details p i{
+  color: #218c74;
+  margin-right: 10px;
+}
+.address span{
+  color: #444444;
+  margin-left: 15px;
+}
+/* ===================================================================================================
+                                          Login / Register Part Css
+====================================================================================================== */
+#login-register{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.login-register-bg{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.login-register-bg .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background: #6c5ce7;
+  color: #ffffff;
+}
+.login-register-bg .nav-pills .nav-link{
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #2f3542;
+}
+.login-register-bg h6{
+  color: #555555;
+  margin-bottom: 25px;
+}
+.login-register-bg h5{
+  color: #34495e;
+  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+.login-register-bg .col-form-label{
+  color: #2f3542;
+  font-weight: 600;
+  font-size: 16px;
+}
+.login-register-bg .form-control:focus{
+  border-color: #487eb0;
+}
+.login-register-bg .btn{
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 18px;
+  background: #6c5ce7;
+  border-color: #6c5ce7;
+}
+.login-register-bg .form-check-label{
+  color: #34495e;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* ===================================================================================================
+                                             Submit Paper Part Css
+===================================================================================================== */
+#submit{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+
+/* ==================================================================================================
+                                             Editorial Board Part Css
+===================================================================================================== */
+#editorial-board{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.editorial-boards{
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.editorial-boards h6{
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(52, 73, 94,0.8);
+  display: inline;
+}
+.editorial-details{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.editorial-boards h5{
+  color: #e58e26;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.editorial-boards span{
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+}
+.editorial-boards a{
+  color: #ffffff;
+  background: #218c74;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+/* =========================================================================================================
+                                           Article Details Part Css
+============================================================================================================ */
+#article-details{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.article-details{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.article-details h6{
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(52, 73, 94,0.8);
+  display: inline;
+}
+.abstract h5{
+  color: #218c74;
+  margin-top: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.abstract p{
+  color: #444444;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: justify;
+  margin-left: 15px;
+}
+
+/* ==========================================================================================================
+                                                    More Part Css
+============================================================================================================ */
+#more{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.more-details{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05); 
+}
+.more-details h6{
+  color: #999999;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+/* ============================================================================================================
+                                              Objective And Scope Part Css
+=============================================================================================================== */
+#objective{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.object{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05); 
+}
+.object h6{
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(52, 73, 94,0.8);
+  display: inline;
+}
+
+/* ============================================================================================================
+                                             Editorial Process Part Css
+============================================================================================================== */
+#editorial-process{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.process{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.process h6{
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(52, 73, 94,0.8);
+  display: inline;
+}
+.process p{
+  margin-top: 15px;
+}
+.process span{
+  color: #218c74;
+  font-size: 18px;
+  font-weight: 600;
+}
+.process span i{
+  color: #e58e26;
+  margin-right: 8px;
+}
+
+/* ==============================================================================================================
+                                             Author Guidelines Part Css
+================================================================================================================ */
+#guideline{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.author{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.author h6{
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(52, 73, 94,0.8);
+  display: inline;
+}
+.author h5{
+  color: #218c74;
+  font-weight: 500;
+}
+
+/* =================================================================================================================
+                                            Peer Review Process Part Css
+==================================================================================================================== */
+#peer{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.peer-review{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.peer-review h6{
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(52, 73, 94,0.8);
+  display: inline;
+}
+.peer-review p{
+  color: #555555;
+  line-height: 26px;
+}
+
+/* ===========================================================================================================
+                                                    Anti Part Css
+============================================================================================================ */
+#anti{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+
+/* =========================================================================================================
+                                               Privacy Policy Part Css
+============================================================================================================ */
+#privacy{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.privacy-policy{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.privacy-policy h6{
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(52, 73, 94,0.8);
+  display: inline;
+}
+.privacy-policy h5{
+  color: #218c74;
+  font-weight: 600;
+  font-size: 18px;
+}
+.privacy-policy h5 i{
+  color: #e58e26;
+  margin-right: 8px;
+}
+.privacy-policy p{
+  color: #666666;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+/* =================================================================================================
+                                        Copyright Part Css
+==================================================================================================== */
+#copyright{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
