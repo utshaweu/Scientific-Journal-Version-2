@@ -16,10 +16,10 @@ img{
   vertical-align: middle;
   border: 0;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,.nav-link{
   font-family: 'Proza Libre', sans-serif;
 }
-p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.form-check-label{
+p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.form-check-label,.dropdown-item,table,tr,td{
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -107,7 +107,64 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   background: rgba(255,255,255);
   padding: 11px 18px;
 }
-
+.dropdown-item{
+  position: relative;
+  color: #2c2c54;
+  font-size: 18px;
+  font-weight: 500;
+}
+.dropdown-item::before{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 12px;
+  right: 10px;
+  background: #218c74;
+  opacity: 0;
+  transition: all linear .3s;
+}
+.dropdown-item:hover::before{
+  opacity: 1;
+}
+.menu-bg{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  -webkit-animation: navbar-animation 0.8s;
+  animation: navbar-animation 0.8s;
+}
+@-webkit-keyframes navbar-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes navbar-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 /* =============================================================================================
                                           Banner Part Css 
 ===============================================================================================*/
@@ -151,6 +208,44 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   -webkit-box-shadow: 2px 1px 5px 0px rgba(255,255,255,1);
   -moz-box-shadow: 2px 1px 5px 0px rgba(255,255,255,1);
   box-shadow: 2px 1px 5px 0px rgba(255,255,255,1);
+}
+
+/* ==============================================================================================
+                                        Publish Part Css
+=============================================================================================== */
+#publish{
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background: #f9f9f9;
+}
+.publish-title h6{
+  color: #487eb0;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.publish-content{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  height: 100%;
+}
+.publish-content i{
+  color: #6c5ce7;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.publish-content h6{
+  color: #2f3542;
+  font-size: 24px;
+  font-weight: 500;
+}
+.publish-content p{
+  color: #718093;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  margin-top: 15px;
 }
 /* ==============================================================================================
                                           About Part Css
@@ -513,6 +608,171 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   font-size: 16px;
   font-weight: 600;
 }
+
+/* ===================================================================================================
+                                             Team Part Css
+===================================================================================================== */
+#team{
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background: #f9f9f9;
+}
+.single-team{
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.single-team:hover .social{
+  cursor: pointer;
+  opacity: 1;
+  transform: rotateY(0deg) scale(1, 1);
+}
+.img-area{
+  overflow: hidden;
+  position: relative;
+}
+.img-area img{
+  width: 100%;
+}
+.img-area:hover img{
+  transform: scale(1.2)
+}
+.img-area img{
+  transition: all 0.4s ease 0s;
+}
+@media (max-width: 768px){
+  .img-area img{
+      display: inline-block;
+  }
+}
+.img-area .social{
+  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: .5s;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.img-area .social ul{
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.img-area .social ul li a{
+  border: 1px solid #dee2e6;
+  color: #2f3542;
+  background: #fff;
+  display: block;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.img-area .social ul li a:hover{
+  background-color: #6c5ce7;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+.img-text{
+  padding: 25px;
+  text-align: center;
+  border-top: 1px solid rgb(108, 92, 231,0.2);
+}
+.img-text h4{
+  margin: 0 0 5px;
+  font-size: 20px;
+  color: #6c5ce7;
+  font-weight: 500;
+}
+.img-text h5{
+  font-size: 17px;
+  color: #2f3542;
+  font-weight: 400;
+}
+
+/* ===================================================================================================
+                                             About Part Css
+====================================================================================================== */
+#about{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.about-content{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.about-content h6{
+  color: #2c2c54;
+  font-size: 24px;
+  font-weight: 500;
+  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 10px 12px;
+  margin-bottom: 15px;
+}
+.about-content p{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.about-content ul{
+  margin-left: 45px;
+}
+.about-content ul li{
+  color: #2f3542;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  transition: all linear .3s;
+}
+.about-content ul li:hover{
+  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  margin-left: 10px;
+}
+.about-content ul li i{
+  color: #487eb0;
+  margin-right: 8px;
+}
+
+/* ===================================================================================================
+                                                Mission Part Css
+====================================================================================================== */
+#mission{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.mission-content{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.mission-content h6{
+  color: #2c2c54;
+  font-size: 24px;
+  font-weight: 500;
+  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 10px 12px;
+  margin-bottom: 15px;
+}
+.mission-content p{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: justify;
+}
 /* ===================================================================================================
                                              Submit Paper Part Css
 ===================================================================================================== */
@@ -521,7 +781,6 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   padding-bottom: 40px;
   background: #f9f9f9;
 }
-
 /* ==================================================================================================
                                              Editorial Board Part Css
 ===================================================================================================== */
@@ -532,7 +791,9 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
 }
 .editorial-boards{
   background: #ffffff;
-  padding: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   box-shadow: 1px 0 10px rgba(0,0,0,0.05);
 }
 .editorial-boards h6{
@@ -543,8 +804,13 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   display: inline;
 }
 .editorial-details{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  padding: 25px 0;
+}
+.editorial-details img{
+  border: 10px solid #ffffff;
 }
 .editorial-boards h5{
   color: #e58e26;
@@ -563,7 +829,93 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   padding: 6px 12px;
   border-radius: 5px;
 }
+/* =========================================================================================================
+                                          Article Processing Charges Part Css
+=========================================================================================================== */
+#charges{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.charges-content{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.charges-content h6{
+  color: #2c2c54;
+  font-size: 24px;
+  font-weight: 500;
+  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 10px 12px;
+  margin-bottom: 15px;
+}
+.charges-content p{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: justify;
+}
+.charges-content table tr td{
+  color: #2c2c54;
+  font-size: 18px;
+  font-weight: 400;
+}
+.charges-content h5{
+  color: #666666;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
+  margin: 20px 0;
+}
 
+/* ==========================================================================================================
+                                                  Feedback Part Css
+============================================================================================================= */
+#feedback{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.feedback-content{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.feedback-item{
+  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.feedback-item p{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 26px;
+}
+.feedback-item h6{
+  color: #6c5ce7;
+  font-size: 18px;
+  font-weight: 500;
+}
+.feedback-item span{
+  color: #487eb0;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+}
+.icon i{
+  color: #6c5ce7;
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
 /* =========================================================================================================
                                            Article Details Part Css
 ============================================================================================================ */
@@ -618,8 +970,64 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   font-weight: 600;
   margin-top: 15px;
   text-transform: uppercase;
+  display: inline-block;
+}
+.open-access{
+  color: #218c74;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 20px;
+  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 5px 10px;
 }
 
+/* ============================================================================================================
+                                              Resources Part Css
+=============================================================================================================== */
+#resources{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.resources-details{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05); 
+}
+.resources-details .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background: #6c5ce7;
+  color: #ffffff;
+}
+.resources-details .nav-pills .nav-link{
+  color: #2c2c54;
+  font-size: 18px;
+  font-weight: 500;
+}
+.resources-content h5{
+  color: #34495e;
+  font-weight: 500;
+  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+.resources-content h6{
+  color: #218c74;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.resources-content p{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: justify;
+  margin-left: 30px;
+}
+.mr4{
+  height: 700px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
 /* ============================================================================================================
                                               Objective And Scope Part Css
 =============================================================================================================== */
@@ -748,25 +1156,18 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
 }
 .privacy-policy h6{
   color: #34495e;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
-  border-bottom: 2px solid rgba(52, 73, 94,0.8);
-  display: inline;
-}
-.privacy-policy h5{
-  color: #218c74;
-  font-weight: 600;
-  font-size: 18px;
-}
-.privacy-policy h5 i{
-  color: #e58e26;
-  margin-right: 8px;
+  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 10px 20px;
+  margin-bottom: 15px;
 }
 .privacy-policy p{
   color: #666666;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
+  text-align: justify;
 }
 
 /* =================================================================================================

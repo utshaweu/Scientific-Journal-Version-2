@@ -6,10 +6,10 @@ $(function(){
     var scrolling = $(this).scrollTop();
      
      if(scrolling > 50){
-         $(".nav-bg").addClass("menu-bg");
+         $(".navbar").addClass("menu-bg");
      }
      else{
-         $(".nav-bg").removeClass("menu-bg");
+         $(".navbar").removeClass("menu-bg");
      }
      if(scrolling > 100){
          back2top.fadeIn(500);
@@ -32,6 +32,45 @@ $(function(){
   var html_body = $('html,body');
   back2top.click(function(){
     html_body.animate({scrollTop:0},1000);
+  });
+
+  //Feedback Slider
+  $('.feedback-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    infinite: true,
+    prevArrow: '.left',
+    nextArrow: '.right',
+    speed:1000,
+    autoplaySpeed: 2500,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          centerMode:false,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+      ]
   });
 
 
