@@ -19,12 +19,12 @@ $(function(){
      }
  });
 
-  
+ $('[data-toggle="tooltip"]').tooltip()
 
- // Closes responsive menu when a scroll link is clicked
- $('.nav-link').on('click', function () {
-  $('.navbar-collapse').collapse('hide');
- });
+//  // Closes responsive menu when a scroll link is clicked
+//  $('.nav-link').on('click', function () {
+//   $('.navbar-collapse').collapse('hide');
+//  });
 
 
   // Back to top js

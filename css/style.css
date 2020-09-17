@@ -1178,3 +1178,26 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   padding-bottom: 40px;
   background: #f9f9f9;
 }
+
+/* ===============================================================================================
+                                        Payment System Part Css
+================================================================================================== */
+#payment{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.payment-details{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.payment-details .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background: #6c5ce7;
+}
+.nav-pills .nav-link{
+  color: #34495e;
+}
+.nav-pills .nav-link i{
+  font-size: 35px;
+}
