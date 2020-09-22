@@ -19,9 +19,17 @@
           <h2><a href="#"><img src="../images/logo.png" alt="logo"></a></h2>
         </div>
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-7">
         <div class="sub-navbar-title text-center">
-          <h1 style="margin-bottom: 0;">World Journal <br> Of <br> Biotechnology And Bioengineering</h1>
+          <h1 style="margin-bottom: 0;">World Journal Of <br> Biotechnology And Bioengineering</h1>
+        </div>
+      </div>
+      <div class="col-lg-2 pr-0">
+        <div class="sub-nav-btn">
+          <a class="btn btn-primary" href="../pages/join-with-us.html" role="button">Join With Us</a>
+          <a class="btn btn-primary" href="../pages/login-register.html" role="button">Login</a>
+          <a class="btn btn-primary" href="../pages/login-register.html" role="button">Register</a>
+          <a class="btn btn-primary" href="../pages/submit.html" role="button">Submit Article</a>
         </div>
       </div>
     </div>
@@ -46,9 +54,9 @@
             Resources
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="./resources.html">Authors</a>
-            <a class="dropdown-item" href="./resources.html">Reviewers</a>
-            <a class="dropdown-item" href="./resources.html">Editors</a>
+            <a class="dropdown-item" href="../pages/resources.html">Authors</a>
+            <a class="dropdown-item" href="../pages/resources.html">Reviewers</a>
+            <a class="dropdown-item" href="../pages/resources.html">Editors</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -56,24 +64,27 @@
             About
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="./about.html">About Us</a>
-            <a class="dropdown-item" href="./mission.html">Our Mission</a>
-            <a class="dropdown-item" href="./vision.html">Our Vision</a>
-            <a class="dropdown-item" href="./editorial-board.html">Editorial Board</a>
-            <a class="dropdown-item" href="./article-processing-charges.html">Article Processing Charges</a>
-            <a class="dropdown-item" href="./team.html">Executive Team</a>
-            <a class="dropdown-item" href="./feedback.html">Feedback</a>
+            <a class="dropdown-item" href="../pages/about.html">About Us</a>
+            <a class="dropdown-item" href="../pages/mission.html">Our Mission</a>
+            <a class="dropdown-item" href="../pages/vision.html">Our Vision</a>
+            <a class="dropdown-item" href="../pages/editorial-board.html">Editorial Board</a>
+            <a class="dropdown-item" href="../pages/article-processing-charges.html">Article Processing Charges</a>
+            <a class="dropdown-item" href="../pages/team.html">Executive Team</a>
+            <a class="dropdown-item" href="../pages/feedback.html">Feedback</a>
           </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../pages/contact.html">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./login-register.html">Login / Register</a>
+          <a class="nav-link" href="../pages/login-register.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/login-register.html">Register</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control" type="search" placeholder="Search for articles by title,author or keyword" aria-label="Search">
+        <input class="form-control" type="search" placeholder="Search for articles by title" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0 mr5" type="submit"><i class="fas fa-search"></i></button>
       </form>
     </div>
@@ -88,7 +99,6 @@
         <div class="col-lg-12">
           <div class="contact-bg">
             <h6>Submit Your Article</h6>
-            <p>A leader in scientific publishing with over 10,000 articles<br> published in 30+ open access journals.</p>
           </div>
         </div>
       </div>
@@ -103,57 +113,65 @@
         <div class="col-lg-9">
           <div class="contact-us">
             <h6>Submit Paper</h6>
-            <p>If you fail to submit the Paper online, please send it on <a href="#" style="color: #218c74;font-style: italic;">info@gmail.com</a></p>
+            <p>If you fail to submit the Paper online, please send it on <a href="#" style="color: #28a745;font-style: italic;font-weight: 600;">info@gmail.com</a></p>
             <div class="form">
               <form>
-                <div class="form-group">
-                  <label for="formGroupExampleInput">Author:</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Author Name">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="formGroupExampleInput">Author: <sup style="color: #28a745;">*</sup></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Author Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="exampleFormControlInput1">Email Address: <sup style="color: #28a745;">*</sup></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Email">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="exampleFormControlNumber1">Phone No: <sup style="color: #28a745;">*</sup></label>
+                    <input type="number" class="form-control" id="exampleFormControlNumber1" placeholder="Enter Your Phone No">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="formGroupExampleInput2">Country: <sup style="color: #28a745;">*</sup></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Name Of the Country">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="formGroupExampleInput3">Address: <sup style="color: #28a745;">*</sup></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Enter Your Address">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="formGroupExampleInput4">Article Title: <sup style="color: #28a745;">*</sup></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Article Title">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="exampleFormControlSelect1">Paper Type: <sup style="color: #28a745;">*</sup></label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option selected>Select Paper Type</option>
+                      <option>Research</option>
+                      <option>Review</option>
+                      <option>Short Communication</option>
+                      <option>Case Study</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="formGroupExampleInput5">Subject & Category: <sup style="color: #28a745;">*</sup></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Enter Name Of the Subject & Category">
+                  </div>
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlInput1">Email Address:</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Email">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlNumber1">Phone No:</label>
-                  <input type="number" class="form-control" id="exampleFormControlNumber1" placeholder="Enter Your Phone No">
-                </div>
-                <div class="form-group">
-                  <label for="formGroupExampleInput2">Country:</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Name Of the Country">
-                </div>
-                <div class="form-group">
-                  <label for="formGroupExampleInput3">Address:</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Enter Your Address">
-                </div>
-                <div class="form-group">
-                  <label for="formGroupExampleInput4">Article Title:</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Article Title">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Paper Type:</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option selected>Select Paper Type</option>
-                    <option>Research</option>
-                    <option>Review</option>
-                    <option>Short Communication</option>
-                    <option>Case Study</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="formGroupExampleInput5">Subject & Category:</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Enter Name Of the Subject & Category">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Abstract:</label>
+                  <label for="exampleFormControlTextarea1">Abstract: <sup style="color: #28a745;">*</sup></label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Abstract"></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlFile1">Upload Attachment:</label>
+                  <label for="exampleFormControlFile1">Upload Attachment: <sup style="color: #28a745;">*</sup></label>
                   <input type="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
-                <button type="submit" class="btn btn-primary">Next</button>
+                <button type="submit" class="btn btn-primary w-100" style="margin-top: 15px;">Next</button>
               </form>
             </div>
           </div>
@@ -272,6 +290,13 @@
     </div>
   </footer>
   <!-- Footer Part End -->
+
+  <!--Back to Top Part Start-->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+    <p style="margin-bottom: 0;">w-jbb</p>
+  </a>
+  <!--Back to Top Part End-->
 
   <script src="../js/jquery-1.12.4.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>

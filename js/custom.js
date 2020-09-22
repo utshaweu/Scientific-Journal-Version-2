@@ -5,12 +5,12 @@ $(function(){
   $(window).scroll(function(){
     var scrolling = $(this).scrollTop();
      
-     if(scrolling > 50){
-         $(".navbar").addClass("menu-bg");
-     }
-     else{
-         $(".navbar").removeClass("menu-bg");
-     }
+    //  if(scrolling > 50){
+    //      $(".navbar").addClass("menu-bg");
+    //  }
+    //  else{
+    //      $(".navbar").removeClass("menu-bg");
+    //  }
      if(scrolling > 100){
          back2top.fadeIn(500);
      }

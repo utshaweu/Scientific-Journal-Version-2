@@ -19,7 +19,7 @@ img{
 h1,h2,h3,h4,h5,h6,.nav-link{
   font-family: 'Proza Libre', sans-serif;
 }
-p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.form-check-label,.dropdown-item,table,tr,td{
+p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-form-label,.form-check-label,.dropdown-item,table,tr,td{
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -29,22 +29,27 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
 #sub-navbar{
   background: #f9f9f9;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .sub-navbar-title h1{
-  color: #34495e;
+  color: #01a3a4;
   font-size: 30px;
   font-weight: 600;
+  line-height: 45px;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, .3);
 }
-.sub-navbar-title span{
-  color: #2f3542;
-  font-size: 18px;
-  font-weight: 700;
+.sub-nav-btn .btn{
+  background: #c8d6e5;
+  color: #222f3e;
+  border-color: #c8d6e5;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all linear .3s;
 }
-.sub-navbar-title p{
-  color: #2c2c54;
-  font-size: 18px;
-  font-weight: 700;
+.sub-nav-btn .btn:hover{
+  background: #28a745;
+  color: #fff;
 }
 
 /* ===============================================================================================
@@ -56,7 +61,6 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
 }
 .navbar-light .navbar-nav .nav-link{
   color: #ffffff;
-  font-family: 'Proza Libre', sans-serif;
   font-size: 18px;
   font-weight: 500;
   transition: all linear .3s;
@@ -90,7 +94,7 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   color: #ffffff;
 }
 .form-inline .form-control{
-  width: 400px;
+  width: 300px;
   border-radius: 0;
   border: 0;
   height: calc(2.9rem + 2px);
@@ -106,6 +110,10 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   border: 1px solid rgba(255,255,255);
   background: rgba(255,255,255);
   padding: 11px 18px;
+  height: calc(2.9rem + 2px);
+  background: #28a745;
+  color: #fff;
+  border-color: #28a745;
 }
 .dropdown-item{
   position: relative;
@@ -200,11 +208,11 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
 }
 .banner-details a{
   color: #ffffff;
-  border: 2px solid #4CAF50;
+  border: 2px solid #28a745;
   padding: 12px 18px;
   font-size: 18px;
   font-weight: 600;
-  background: #4CAF50;
+  background: #28a745;
   -webkit-box-shadow: 2px 1px 5px 0px rgba(255,255,255,1);
   -moz-box-shadow: 2px 1px 5px 0px rgba(255,255,255,1);
   box-shadow: 2px 1px 5px 0px rgba(255,255,255,1);
@@ -269,14 +277,13 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
   color: #34495e;
-  font-family: 'Proza Libre', sans-serif;
   font-size: 16px;
   font-weight: 500;
   background: #f9f9f9;
 }
 .nav-tabs .nav-link{
-  color: #218c74;
-  font-family: 'Proza Libre', sans-serif;
+  color: #28a745;
+  font-weight: 500;
 }
 .article-content{
   margin-top: 20px;
@@ -290,7 +297,7 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   line-height: 30px;
 }
 .article-content p i{
-  color: #218c74;
+  color: #28a745;
   font-size: 18px;
   margin-right: 10px;
 }
@@ -302,7 +309,7 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   line-height: 26px;
 }
 .article-content p a:hover{
-  color: #218c74;
+  color: #28a745;
 }
 .article-content span{
   color: #666666;
@@ -317,7 +324,7 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   margin-right: 15px;
 }
 .view a i{
-  color: #218c74;
+  color: #28a745;
   margin-right: 5px;
 }
 .link{
@@ -343,7 +350,7 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   transform: translateX(5px);
 }
 .link ul li a{
-  color: #218c74;
+  color: #28a745;
 }
 .link ul li a i{
   color: #e58e26;
@@ -394,34 +401,43 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
 #footer-contact{
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #f5f6fa;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 .get h6{
-  color: #487eb0;
+  color: #28a745;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 25px;
 }
 .get p{
-  color: #718093;
+  color: #34495e;
   font-weight: 500;
   margin-right: 70px;
+  font-size: 16px;
 }
 .get p i{
-  color: #4CAF50;
+  color: #6c5ce7;
   font-size: 16px;
   margin-right: 8px;
 }
 .get ul li{
   margin-bottom: 10px;
+  transition: all linear .3s;
 }
 .get ul li a{
-  color: #718093;
+  color: #34495e;
   font-size: 16px;
   font-weight: 500;
+  transition: all linear .3s;
+}
+.get ul li:hover{
+  transform: translateX(5px);
+}
+.get ul li a:hover{
+  color: #28a745;
 }
 .get ul li a i{
-  color: #4CAF50;
+  color: #6c5ce7;
   font-size: 16px;
   margin-right: 8px;
 }
@@ -437,6 +453,7 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   color: #ffffff;
   font-weight: 500;
   font-size: 16px;
+  font-style: italic;
 }
 
 /* ===============================================================================================
@@ -448,17 +465,19 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   bottom: 30px;
   z-index: 9999;
   display: none;
+  background: #28a745;
+  text-align: center;
+  border-radius: 3px;
+  padding: 10px 15px;
 }
 .back-to-top i{
   color: #f5f5f5;
   font-size: 18px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background: #487eb0;
-  border: 1px solid #487eb0;
-  border-radius: 3px;
+}
+.back-to-top p{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
 }
 /* ==================================================================================================
                                           Contact Us Part Css
@@ -489,9 +508,10 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   background: #f9f9f9;
 }
 .contact-us{
-  background: #ffffff;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   padding: 30px;
   box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  border-radius: 5px;
 }
 .contact-us h6{
   color: #34495e;
@@ -501,7 +521,7 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   display: inline;
 }
 .contact-us p{
-  color: #555555;
+  color: #2f3542;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -511,19 +531,22 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
 .form label{
   font-size: 16px;
   font-weight: 600;
-  color: #e58e26;
+  color: #28a745;
 }
 .form .form-control{
-  color: #999999;
+  color: #666666;
 }
 .form .form-control:focus{
   box-shadow: none;
-  border-color: #999999;
+  border-color: #28a745;
 }
 .form .btn{
   border-radius: 5px;
-  background: #218c74;
-  border-color: #218c74;
+  background: #28a745;
+  border-color: #28a745;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .address{
   background: #ffffff;
@@ -545,7 +568,7 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   font-size: 16px;
 }
 .add-details p i{
-  color: #218c74;
+  color: #28a745;
   margin-right: 10px;
 }
 .address span{
@@ -564,17 +587,8 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   background: #ffffff;
   padding: 30px;
   box-shadow: 1px 0 10px rgba(0,0,0,0.05);
-}
-.login-register-bg .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-  background: #6c5ce7;
-  color: #ffffff;
-}
-.login-register-bg .nav-pills .nav-link{
-  font-family: 'Proza Libre', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #2f3542;
+  border-radius: 5px;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 .login-register-bg h6{
   color: #555555;
@@ -582,19 +596,19 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
 }
 .login-register-bg h5{
   color: #34495e;
-  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   font-size: 20px;
   font-weight: 600;
   padding: 10px 20px;
   margin-bottom: 20px;
 }
-.login-register-bg .col-form-label{
-  color: #2f3542;
+.login-register-bg label{
+  color: #28a745;
   font-weight: 600;
   font-size: 16px;
 }
 .login-register-bg .form-control:focus{
-  border-color: #487eb0;
+  border-color: #28a745;
 }
 .login-register-bg .btn{
   letter-spacing: 1px;
@@ -1011,7 +1025,7 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   margin-bottom: 20px;
 }
 .resources-content h6{
-  color: #218c74;
+  color: #28a745;
   letter-spacing: 1px;
   font-weight: 500;
 }
@@ -1022,6 +1036,21 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
   line-height: 26px;
   text-align: justify;
   margin-left: 30px;
+}
+.resources-content ul li{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: justify;
+  margin-left: 30px;  
+}
+.resources-content ul li i{
+  color: #28a745;
+  font-size: 10px;
+  margin-right: 5px;
+  position: relative;
+  top: -2px;
 }
 .mr4{
   height: 700px;
@@ -1200,4 +1229,62 @@ p,a,span,strong,ul,ol,.btn,.form-control,label,::placeholder,.col-form-label,.fo
 }
 .nav-pills .nav-link i{
   font-size: 35px;
+}
+
+/* ======================================================================================================
+                                               Join With Us Part Css
+======================================================================================================== */
+#join{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  width: 100%;
+  padding: 60px 0;
+  position: relative;
+}
+.join-bg  h6{
+  color: #487eb0;
+  font-size: 40px;
+  font-weight: 600;
+}
+.join-bg p{
+  color: #555555;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+#join-details{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.join-content{
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  border-radius: 5px;
+  /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+  background-image: linear-gradient(-135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.join-content h6{
+  text-align: center;
+  color: #6c5ce7;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.join-content label{
+  color: #28a745;
+  font-size: 16px;
+  font-weight: 600;
+}
+.join-content .form-control:focus{
+  border-color: #28a745;
+}
+.join-content .btn{
+  background: #6c5ce7;
+  border-color: #6c5ce7;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 15px;
 }
