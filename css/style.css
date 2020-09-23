@@ -1161,14 +1161,6 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   line-height: 26px;
 }
 
-/* ===========================================================================================================
-                                                    Anti Part Css
-============================================================================================================ */
-#anti{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background: #f9f9f9;
-}
 
 /* =========================================================================================================
                                                Privacy Policy Part Css
@@ -1197,6 +1189,19 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   line-height: 26px;
   font-weight: 400;
   text-align: justify;
+}
+.privacy-policy ul li{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  line-height: 26px;
+  text-align: justify;
+}
+.privacy-policy ul li i{
+  color: #28a745;
+  margin-right: 8px;
 }
 
 /* =================================================================================================
