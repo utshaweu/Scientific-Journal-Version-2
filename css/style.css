@@ -38,6 +38,15 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   line-height: 45px;
   text-shadow: 4px 4px 2px rgba(150, 150, 150, .3);
 }
+.sub-navbar-title span{
+  font-family: 'Proza Libre', sans-serif;
+}
+.mr7{
+  margin-left: 60px;
+}
+.mr8{
+  margin-left: 150px;
+}
 .sub-nav-btn .btn{
   background: #c8d6e5;
   color: #222f3e;
@@ -622,7 +631,21 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   font-size: 16px;
   font-weight: 600;
 }
-
+.mr6{
+  display: none;
+}
+.mr6 h6{
+  color: #487eb0;
+  font-size: 24px;
+  font-weight: 600;
+}
+.mr6 p{
+  color: #555555;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
 /* ===================================================================================================
                                              Team Part Css
 ===================================================================================================== */
@@ -1292,4 +1315,25 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   font-size: 16px;
   letter-spacing: 1px;
   margin-top: 15px;
+}
+
+/* =================================================================================================
+                                     Editorial Workflow Part Css
+=================================================================================================== */
+#workflow{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.editorial-workflow{
+  background: #ffffff;
+  padding: 35px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.editorial-workflow p{
+  color: #555555;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: justify;
 }
