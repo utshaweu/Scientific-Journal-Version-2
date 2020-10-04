@@ -418,6 +418,13 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   font-weight: 600;
   margin-bottom: 25px;
 }
+.get h5{
+  color: #e58e26;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 1px solid #e58e26;
+  display: inline-block;
+}
 .get p{
   color: #34495e;
   font-weight: 500;
@@ -861,10 +868,9 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   font-weight: 400;
 }
 .editorial-boards a{
-  color: #ffffff;
-  background: #218c74;
-  padding: 6px 12px;
-  border-radius: 5px;
+  color: #28a745;
+  font-size: 16px;
+  font-weight: 600;
 }
 /* =========================================================================================================
                                           Article Processing Charges Part Css
