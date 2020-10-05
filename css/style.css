@@ -1343,3 +1343,59 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   line-height: 26px;
   text-align: justify;
 }
+
+/* ================================================================================================
+                                      View Profile Part Css
+=================================================================================================== */
+#view-profile{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.profile-content{
+  background: #ffffff;
+  padding: 35px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.profile-content h5{
+  color: #34495e;
+  font-size: 24px;
+  font-weight: 500;
+  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+.profile-content p{
+  color: #2f3542;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.profile-content span{
+  color: #28a745;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.modal-content{
+  padding: 35px;
+}
+
+/* =======================================================================================================
+                                       Change Password Part Css
+========================================================================================================== */
+#change-password{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f9f9;
+}
+.password{
+  background: #ffffff;
+  padding: 35px;
+  box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+}
+.password label{
+  color: #6c5ce7;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
