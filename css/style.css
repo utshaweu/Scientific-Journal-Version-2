@@ -676,6 +676,7 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   background-color: #ffffff;
   margin-bottom: 30px;
   box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(108, 92, 231,0.15);
 }
 .single-team:hover .social{
   cursor: pointer;
@@ -764,14 +765,16 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   background: #ffffff;
   padding: 30px;
   box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(108, 92, 231,0.15);
 }
 .about-content h6{
-  color: #2c2c54;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 500;
-  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  background: #295e6a;
   padding: 10px 12px;
   margin-bottom: 15px;
+  border-radius: 3px;
 }
 .about-content p{
   color: #666666;
@@ -782,7 +785,7 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   margin-bottom: 30px;
 }
 .about-content ul{
-  margin-left: 45px;
+  margin-left: 30px;
 }
 .about-content ul li{
   color: #2f3542;
@@ -812,14 +815,16 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   background: #ffffff;
   padding: 30px;
   box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(108, 92, 231,0.15);
 }
 .mission-content h6{
-  color: #2c2c54;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 500;
-  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  background: #295e6a;
   padding: 10px 12px;
   margin-bottom: 15px;
+  border-radius: 3px;
 }
 .mission-content p{
   color: #666666;
@@ -850,6 +855,7 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   padding-left: 30px;
   padding-right: 30px;
   box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(108, 92, 231,0.15);
 }
 .editorial-boards h6{
   color: #34495e;
@@ -895,14 +901,16 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   background: #ffffff;
   padding: 30px;
   box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(108, 92, 231,0.15);
 }
 .charges-content h6{
-  color: #2c2c54;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 500;
-  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  background: #295e6a;
   padding: 10px 12px;
   margin-bottom: 15px;
+  border-radius: 3px;
 }
 .charges-content p{
   color: #666666;
@@ -936,6 +944,7 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   background: #ffffff;
   padding: 30px;
   box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(108, 92, 231,0.15);
 }
 .feedback-item{
   background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
@@ -1047,6 +1056,7 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   background: #ffffff;
   padding: 30px;
   box-shadow: 1px 0 10px rgba(0,0,0,0.05); 
+  border: 1px solid rgba(108, 92, 231,0.15);
 }
 .resources-details .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
   background: #6c5ce7;
@@ -1215,14 +1225,16 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   background: #ffffff;
   padding: 30px;
   box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(108, 92, 231,0.15);
 }
 .privacy-policy h6{
-  color: #34495e;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 500;
-  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
+  background: #295e6a;
   padding: 10px 20px;
   margin-bottom: 15px;
+  border-radius: 3px;
 }
 .privacy-policy p{
   color: #666666;
@@ -1281,7 +1293,7 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
                                                Join With Us Part Css
 ======================================================================================================== */
 #join{
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-image: linear-gradient(-120deg, #fdfbfb 0%, #ebedee 100%);
   width: 100%;
   padding: 60px 0;
   position: relative;
@@ -1347,6 +1359,7 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   background: #ffffff;
   padding: 35px;
   box-shadow: 1px 0 10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(108, 92, 231,0.15);
 }
 .editorial-workflow p{
   color: #555555;
