@@ -212,12 +212,12 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
                                           Banner Part Css 
 ===============================================================================================*/
 #banner{
-  background: url(../images/banner.jpg);
+  background: url(../images/banner2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 500px;
+  height: 600px;
   position: relative;
 }
 #banner::after{
@@ -247,11 +247,11 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
 }
 .banner-details a{
   color: #ffffff;
-  border: 2px solid #28a745;
+  border: 2px solid #6c5ce7;
   padding: 12px 18px;
   font-size: 18px;
   font-weight: 600;
-  background: #28a745;
+  background: #6c5ce7;
   -webkit-box-shadow: 2px 1px 5px 0px rgba(255,255,255,1);
   -moz-box-shadow: 2px 1px 5px 0px rgba(255,255,255,1);
   box-shadow: 2px 1px 5px 0px rgba(255,255,255,1);
