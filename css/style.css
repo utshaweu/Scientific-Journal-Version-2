@@ -16,6 +16,14 @@ img{
   vertical-align: middle;
   border: 0;
 }
+@font-face{
+  src: url(../fonts/arial_narrow_7.ttf);
+  font-family: an;
+}
+@font-face{
+  src: url(../fonts/CASTELAR.ttf);
+  font-family: c;
+}
 h1,h2,h3,h4,h5,h6,.nav-link{
   font-family: 'Proza Libre', sans-serif;
 }
@@ -49,30 +57,45 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
 #sub-navbar{
   background: #f9f9f9;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  background: url(../images/sub-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#sub-navbar::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255,0.92);
 }
 .sub-navbar-title{
   text-align: center;
 }
 .sub-navbar-title h1{
-  color: #01a3a4;
-  font-size: 16px;
-  font-weight: 600;
+  color: #2e3191;
+  font-size: 24px;
+  font-family: an;
+  font-style: italic;
 }
 .sub-navbar-title p{
-  color: #28a745;
-  font-size: 38px;
-  font-weight: 700;
-  font-family: 'Proza Libre', sans-serif;
+  color: #217404;
+  font-size: 40px;
+  font-family: c;
+  letter-spacing: 2px;
 }
 .sub-navbar-title img{
   position: relative;
   left: -12px;
 }
 .sub-nav-btn .btn{
-  background: #c8d6e5;
-  color: #222f3e;
-  border-color: #c8d6e5;
+  background: #43a680;
+  color: #ffffff;
+  border-color: #43a680;
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 600;
@@ -84,7 +107,8 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
 }
 .mr7{
   position: relative;
-  top: -12px;
+  top: -11px;
+  font-size: 45px!important;
 }
 
 /* ===============================================================================================
@@ -136,6 +160,9 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
 }
 .form-control:focus{
   box-shadow: none;
+}
+.form-inline .form-control::placeholder{
+  color: #222222;
 }
 .btn-outline-success.focus, .btn-outline-success:focus {
   box-shadow: none;
@@ -443,14 +470,33 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
 =================================================================================================== */
 #footer-contact{
   padding-top: 50px;
-  padding-bottom: 50px;
-  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  padding-bottom: 40px;
+  background: #113a5d;
 }
 .get h6{
-  color: #28a745;
+  color: #b5ff7d;
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.get h6::after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -10px;
+  width: 70px;
+  height: 1px;
+  background: #b5ff7d;
+}
+.get h6::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -15px;
+  width: 70px;
+  height: 1px;
+  background: #b5ff7d;
 }
 /* .get h5{
   color: #e58e26;
@@ -460,13 +506,16 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   display: inline-block;
 } */
 .get p{
-  color: #34495e;
+  color: #ffffff;
   font-weight: 500;
   margin-right: 70px;
   font-size: 16px;
 }
+.get i{
+  color: #b5ff7d!important;
+}
 .get p i{
-  color: #6c5ce7;
+  color: #ffffff;
   font-size: 16px;
   margin-right: 8px;
 }
@@ -475,7 +524,7 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   transition: all linear .3s;
 }
 .get ul li a{
-  color: #34495e;
+  color: #fff;
   font-size: 16px;
   font-weight: 500;
   transition: all linear .3s;
@@ -484,10 +533,10 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
   transform: translateX(5px);
 }
 .get ul li a:hover{
-  color: #28a745;
+  color: #b5ff7d;
 }
 .get ul li a i{
-  color: #6c5ce7;
+  color: #ffffff;
   font-size: 16px;
   margin-right: 8px;
 }
@@ -495,9 +544,10 @@ p,a,span,strong,ul,ol,.btn,.btn-primary,.form-control,label,::placeholder,.col-f
                                               Footer Part Css
 ==================================================================================================== */
 #footer{
-  background: #6c5ce7;
+  background: #1b3764;
   padding-top: 25px;
   padding-bottom: 25px;
+  border-top: 1px solid rgba(181, 255, 125,0.3);
 }
 .footer-content h6{
   color: #ffffff;
